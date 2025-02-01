@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-data = pd.read_csv("../data/sample_data.csv")
+data = pd.read_csv("data/sample_data.csv")
 
 X = data[['subscription_length', 'monthly_usage', 'customer_support_calls']]
 y = data['churn']
